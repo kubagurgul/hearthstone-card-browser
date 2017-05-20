@@ -1,0 +1,39 @@
+.cardsContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: pink;
+}
+
+.card:hover {
+    border: 1px solid blue;
+}
+
+.cardImg {
+    width: 100px;
+    height: 150px;
+}
+
+.card.common {
+    background-color: white;
+}
+
+.card.rare {
+    background-color: lightblue;
+}
+
+.card.epic {
+    background-color: purple;
+    color: white;
+}
+
+.card.epic a {
+    color: white;
+}
+
+.card.legendary {
+    background-color: darkgoldenrod;
+}

@@ -1,0 +1,13 @@
+<h2>Cards</h2>
+
+
+<input type="text" #searchBox />
+<div class="cardsContainer">
+    <div *ngFor="let card of cards | async" [class]="resolveClassName(card)">
+        <a [routerLink]="['/detail', card.cardId]">
+            <!--<img [src]="card.img" class="cardImg">-->
+            {{ card.name }}
+        </a><br> Type: {{ card.type }}
+
+    </div>
+</div>
